@@ -1,5 +1,6 @@
 com\zoopla\constants\HomePageConstants.class
 com\zoopla\parent\WebFactory.class
+com\zoopla\util\MyListener.class
 com\zoopla\constants\SearchDetailsPageConstants.class
 com\zoopla\pages\AgentDetailsPage.class
 com\zoopla\pages\SearchPropertyPage.class
