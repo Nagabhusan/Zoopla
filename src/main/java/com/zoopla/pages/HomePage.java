@@ -3,8 +3,6 @@ package com.zoopla.pages;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-
-import com.zoopla.constants.HomePageConstants;
 import com.zoopla.parent.WebFactory;
 
 public class HomePage extends WebFactory{
@@ -22,13 +20,13 @@ public class HomePage extends WebFactory{
 		PageFactory.initElements(driver, this);
 	}
 	
-	public String homePageTittle() {
+	public String getHomePageTittle() {
 		return driver.getTitle();
 		
 	}
 	
-	public SearchPropertyPage searchCity() {
-		searchTxt.sendKeys(HomePageConstants.searchCity);
+	public SearchPropertyPage searchCity(String cityName) {
+		searchTxt.sendKeys(cityName);
 		searchBtn.click();
 		return new SearchPropertyPage();
 	}

@@ -3,11 +3,15 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.zoopla.testpages.testpage">
+      <class name="com.zoopla.testpages.ZooplaTest">
         <methods>
-          <include name="verify"/>
+          <include name="verifyHomePageTittle"/>
+          <include name="tearDown"/>
+          <include name="validateAgentDetails"/>
+          <include name="initBrowser"/>
+          <include name="getAgentDetailsFifthProperty"/>
         </methods>
-      </class> <!-- com.zoopla.testpages.testpage -->
+      </class> <!-- com.zoopla.testpages.ZooplaTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -7,7 +7,7 @@
 	</listeners>
 	<test name="Test1">
 		<classes>
-			<class name="com.zoopla.testpages.testpage" />
+			<class name="com.zoopla.testpages.ZooplaTest" />
 		</classes>
 	</test> <!-- Test1 -->
 </suite> <!-- Suite1 -->

@@ -223,6 +223,7 @@ public class MyListener implements IReporter,WebDriverEventListener,ITestListene
 	}
 
 	public void onTestFailure(ITestResult result) {
+		
 		System.out.println("Exception occured: " + result);
 		try {
 			Util.takeScreenshotAtEndOfTest();
@@ -233,8 +234,7 @@ public class MyListener implements IReporter,WebDriverEventListener,ITestListene
 	}
 
 	public void onTestSkipped(ITestResult result) {
-		// TODO Auto-generated method stub
-		
+System.out.println(result.getTestName() + " Skipped");		
 	}
 
 	public void onTestFailedButWithinSuccessPercentage(ITestResult result) {
